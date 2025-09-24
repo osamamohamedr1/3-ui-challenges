@@ -1,80 +1,40 @@
 # Three UI Challenges
 
-A Flutter project showcasing advanced UI interactions and animations.
-
-## UI Challenges
-
-### 1. Advanced Animation Chain
-An interactive animation system that demonstrates complex animation sequences and chaining effects.
-
-**Video Title:** "Flutter Advanced Animation Chain - Smooth Sequential Animations Tutorial"
-
-### 2. Interactive Physics Widget  
-A physics-based interactive widget with realistic drag and drop mechanics, including hover effects and visual feedback.
-
-**Video Title:** "Flutter Interactive Physics Widget - Drag & Drop with Hover Effects"
+A Flutter project demonstrating advanced UI interactions and smooth animations.
 
 ## Features
 
-- **Drag & Drop Interface**: Intuitive color matching game with visual feedback
-- **Animation Chains**: Smooth sequential animations with customizable timing
-- **Physics Interactions**: Realistic physics-based movements and interactions
-- **Responsive Design**: Optimized for different screen sizes
-- **Visual Feedback**: Hover effects, opacity changes, and interactive elements
+### 🎯 Interactive Drag & Drop
+Physics-based color matching game with visual feedback, hover effects, and success animations.
 
-## Getting Started
+**📹 Video Demo:** [Flutter Interactive Physics Widget - Drag & Drop with Hover Effects](video-link-here)
 
-This project demonstrates advanced Flutter UI techniques including:
-- Custom animations and transitions
-- Drag and drop functionality
-- Physics-based interactions
-- State management for interactive widgets
+### 📱 Task Management Interface  
+Swipe-to-delete and drag-to-reorder functionality with confirmation dialogs and undo options.
 
-### Prerequisites
+**📹 Video Demo:** [Flutter Task Management - Swipe to Delete & Drag to Reorder](video-link-here)
 
-- Flutter SDK
-- Dart SDK
-- IDE (VS Code, Android Studio, etc.)
+### ⚡ Sequential Loading Animations
+Smooth animation chains with multiple tweens, scaling effects, and continuous looping.
 
-### Installation
+**📹 Video Demo:** [Flutter Advanced Animation Chain - Sequential Loading Dots](video-link-here)
 
-1. Clone the repository
-```bash
-git clone https://github.com/osamamohamedr1/3-ui-challenges.git
+## Technologies
+
+- **Custom Animations** - AnimationController & Tween
+- **Physics Simulation** - Draggable & DragTarget widgets
+- **State Management** - StatefulWidget patterns
+
+
+
+## Project Structure
+
 ```
-
-2. Navigate to the project directory
-```bash
-cd three_ui_challenges
+lib/
+├── main.dart                 # App entry point
+├── animation/               
+│   └── loading_animation.dart # Sequential dot animations
+├── dragable_list/          
+│   └── drag_drop.dart       # Physics-based interactions
+└── target_widget/          # Additional UI components
 ```
-
-3. Install dependencies
-```bash
-flutter pub get
-```
-
-4. Run the app
-```bash
-flutter run
-```
-
-## Resources
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-- [Flutter Documentation](https://docs.flutter.dev/)nges
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
