@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:three_ui_challenges/tatget_widget/drag_drop.dart';
 
 class LoadingAnimation extends StatefulWidget {
   const LoadingAnimation({super.key});
@@ -47,29 +48,39 @@ class _LoadingAnimationState extends State<LoadingAnimation>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _controller,
-      builder: (context, child) {
-        return Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: _dotAnimations.map((animation) {
-              return ScaleTransition(
-                scale: Tween(begin: 1.0, end: 2.6).animate(animation),
-                child: Container(
-                  width: 10,
-                  height: 10,
-                  margin: const EdgeInsets.symmetric(horizontal: 6.5),
-                  decoration: BoxDecoration(
-                    color: _colorAnimation.value,
-                    shape: BoxShape.circle,
+    return Scaffold(
+      floatingActionButton: IconButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const DragDropScreen()),
+          );
+        },
+        icon: Icon(Icons.next_plan, color: Colors.white),
+      ),
+      body: AnimatedBuilder(
+        animation: _controller,
+        builder: (context, child) {
+          return Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: _dotAnimations.map((animation) {
+                return ScaleTransition(
+                  scale: Tween(begin: 1.0, end: 2.6).animate(animation),
+                  child: Container(
+                    width: 10,
+                    height: 10,
+                    margin: const EdgeInsets.symmetric(horizontal: 6.5),
+                    decoration: BoxDecoration(
+                      color: _colorAnimation.value,
+                      shape: BoxShape.circle,
+                    ),
                   ),
-                ),
-              );
-            }).toList(),
-          ),
-        );
-      },
+                );
+              }).toList(),
+            ),
+          );
+        },
+      ),
     );
   }
 }

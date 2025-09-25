@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:three_ui_challenges/dragable_list/reorderable_list_view.dart';
+import 'package:three_ui_challenges/animation/loading_animation.dart';
 
 void main() {
   runApp(const UiChallenges());
@@ -12,7 +12,7 @@ class UiChallenges extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: ReorderableTaskView()),
+      home: Scaffold(body: LoadingAnimation()),
     );
   }
 }

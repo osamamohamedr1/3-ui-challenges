@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:three_ui_challenges/dragable_list/reorderable_list_view.dart';
 
 class DragDropScreen extends StatefulWidget {
   const DragDropScreen({super.key});
@@ -14,6 +15,16 @@ class _DragDropScreenState extends State<DragDropScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: IconButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const ReorderableTaskView(),
+            ),
+          );
+        },
+        icon: Icon(Icons.next_plan, color: Colors.white),
+      ),
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
         title: const Text('Drag & Drop '),
