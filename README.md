@@ -7,17 +7,30 @@ A Flutter project demonstrating advanced UI interactions and smooth animations.
 ### 🎯 Interactive Drag & Drop
 Physics-based color matching game with visual feedback, hover effects, and success animations.
 
-**📹 Video Demo:** [Flutter Interactive Physics Widget - Drag & Drop with Hover Effects](video-link-here)
+**📹 Video Demo:** 
+
+
+https://github.com/user-attachments/assets/c43463b7-08ad-4fe1-a3a4-fb525cf8e250
+
+
 
 ### 📱 Task Management Interface  
 Swipe-to-delete and drag-to-reorder functionality with confirmation dialogs and undo options.
 
-**📹 Video Demo:** [Flutter Task Management - Swipe to Delete & Drag to Reorder](video-link-here)
+**📹 Video Demo:** 
+
+
+https://github.com/user-attachments/assets/37b50cd4-19ab-4e3e-9b94-9a55c81c8848
+
 
 ### ⚡ Sequential Loading Animations
 Smooth animation chains with multiple tweens, scaling effects, and continuous looping.
 
-**📹 Video Demo:** [Flutter Advanced Animation Chain - Sequential Loading Dots](video-link-here)
+**📹 Video Demo:**
+
+
+https://github.com/user-attachments/assets/d70d4860-0639-4dca-ad78-8615dfe9683f
+
 
 ## Technologies
 
